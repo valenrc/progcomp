@@ -40,10 +40,13 @@ inp: $(FILE)
 	@./$(FILE) < input
 
 # Regla para compilar, ejecutar con input, guardar output y comparar
+# Ejecuta el programa con el arhivo $(INP)
+# Guarda el resultado en $(OUT1)
+# Compara el resultado con lo que haya en $(OUT2) usando el script $(COMPARE)
 comp: $(FILE)
 	@mkdir -p output
 	@echo "Ejecutando $(FILE) con input y guardando output en output1..."
-	@./$(FILE) < input > $(OUT1)
+	@./$(FILE) < $(INP) > $(OUT1)
 	@$(PYTHON) $(COMPARE) --file1 $(OUT1) --file2 $(OUT2)
 
 # Regla para compilar con flags de DEBUG y ejecutar con GDB usando el input

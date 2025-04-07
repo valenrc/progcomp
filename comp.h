@@ -1,3 +1,4 @@
+// -
 #include <iostream>   // cout, cin
 #include <algorithm>  // sort, binary_search, lower_bound, upper_bound
 #include <cmath>      // sqrt, pow, abs, ceil, floor
@@ -43,4 +44,13 @@ template <typename TCOMP>
 void print_container(const TCOMP& c){
   forall(i,c) cout << i << " ";
   cout << endl;
+}
+
+int main() {
+  ios::sync_with_stdio(false);
+  cin.tie(0);
+
+
+
+  return 0;
 }
