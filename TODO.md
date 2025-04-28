@@ -8,5 +8,5 @@
 - [x] 1 - CSES 1637
 - [x] 2 - UVa (online judge) 10306 - e-coins (lo hice con backtracking jeje)
 - [x] 3 - UVa (online judge) 11790 - murcia's skyline
-- [ ] 4 - UVA (online judge) 10819 - trouble of 13-dots
-- [ ] 5 - CSES 2413 - counting towers
+- [x] 4 - UVA (online judge) 10819 - trouble of 13-dots
+- [x] 5 - CSES 2413 - counting towers
