@@ -1,0 +1,1 @@
+// UVa 1252 - Twenty Questions

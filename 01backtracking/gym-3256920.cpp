@@ -1,4 +1,4 @@
-// Gym - UVA 325692O
+// Number of paths in grid - Gym 325692O
 #include <iostream>   // cout, cin
 #include <algorithm>  // sort, binary_search, lower_bound, upper_bound
 #include <cmath>      // sqrt, pow, abs, ceil, floor

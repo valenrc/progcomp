@@ -1,3 +1,4 @@
+// UVa 1231 - Accorn
 #include <iostream>   // cout, cin
 #include <algorithm>  // sort, binary_search, lower_bound, upper_bound
 #include <cmath>      // sqrt, pow, abs, ceil, floor
@@ -38,9 +39,10 @@ void print_container(const TCOMP& c){
 }
 
 int main() {
-  ios::sync_with_stdio(false); cin.tie(0);
+  ios::sync_with_stdio(false);
+  cin.tie(0);
 
-  
+
 
   return 0;
 }
