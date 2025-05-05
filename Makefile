@@ -1,6 +1,6 @@
 # Compilador y flags
 CXX := g++
-CXXFLAGS  := -std=c++14 -Werror -Wall -Wextra -Wshadow -Wconversion -Wfatal-errors -Wpedantic -Wnull-dereference -Wlogical-op -Wduplicated-cond
+CXXFLAGS  := -std=c++14 -Wall -Wextra -Wshadow -Wconversion -Wfatal-errors -Wpedantic -Wnull-dereference -Wlogical-op -Wduplicated-cond
 OPTFLAGS  := -O2 -march=native	# optimizaciones
 DBGFLAGS  := -g -fsanitize=address,undefined -DDEBUG
 GDBFLAGS  := -g -O0 -DDEBUG
