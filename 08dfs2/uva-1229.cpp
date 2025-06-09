@@ -189,13 +189,15 @@ int main() {
       forall(u, adj[v]) ans.insert(words[u]);
     }
 
-    // convert set to vector and sort
+    // convertir a vector y luego ordenar alfabeticamente
     vector<string> result(ans.begin(), ans.end());
     sort(result.begin(), result.end());
     
     cout << result.size() << "\n";
-    forall(s, result){
-      cout << s << " ";
+
+    forn(i, result.size()){
+      cout << result[i];
+      if(i < (int)(result.size()) - 1) cout << " ";
     }
     cout << "\n";
 

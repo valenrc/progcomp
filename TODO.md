@@ -44,6 +44,6 @@
 
 ## DFS II
 - [x] 1 - CSES 1679 - Course schedule
-- [ ] 3 - UVa 1229 - Sub-dictionary
+- [x] 3 - UVa 1229 - Sub-dictionary
 - [ ] 2 - UVa 1263 - Mines
 - [ ] 4 - UVa 12745 - Wishmaster  

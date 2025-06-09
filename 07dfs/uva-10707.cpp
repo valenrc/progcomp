@@ -50,8 +50,8 @@ void print_container(const vector<vector<int>>& container) {
 }
 
 // S/N/E/W
-int dx[] = {0, 1, 0, -1};
-int dy[] = {1, 0, -1, 0};
+int dx[] = {0, 1, 0,-1};
+int dy[] = {1, 0,-1, 0};
 
 int w, h, n;
 
@@ -63,6 +63,9 @@ void dfs(const vvi& board, int x, int y, vi& cluster){
   if(x < 0 || x >= h || y < 0 || y >= w || visited[x][y] || board[x][y] == 0) return;
 
   visited[x][y] = true;
+  // cluster.pb(pair<int, int>(x,y)); // coordendas de cada pieza en el cluster
+  // en este caso el parametro cluster seria vector<pair<int, int>>
+  // y procedo buscando representaciones canonicas 
   cluster.pb(board[x][y]);
 
   for(int d = 0; d < 4; d++){
@@ -112,6 +115,8 @@ int main() {
 
     vvi clusters_b2 = find_clusters(board2);
     print_container(clusters_b2);
+
+    // verificar si los clusters son iguales usando graph isomorphism para grid graphs
 
   }
 
