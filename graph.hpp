@@ -2,7 +2,7 @@
 // C++98 
 #ifndef GRAPH_H
 #define GRAPH_H
-#include "../comp.h"
+#include "../comp.hpp"
 
 // Lista de adyacencia con pesos
 // Un grafo es un vector de vectores de pares de enteros
@@ -76,6 +76,7 @@ void connected_components(int u, vector<bool>& visited, AL& g){
       dfs(u, visited, g);
       cout << endl;
     }
+  }
 }
 
 // Cycle Check (Directed Graph)
