@@ -1,3 +1,4 @@
+// Wormholes
 #include <iostream>   // cout, cin
 #include <algorithm>  // sort, binary_search, lower_bound, upper_bound
 #include <cmath>      // sqrt, pow, abs, ceil, floor
@@ -15,8 +16,6 @@
 #include <queue>
 using namespace std;
 // Data types
-typedef unsigned int uint;
-typedef unsigned long ulong;
 typedef long long ll;
 typedef unsigned long long ull;
 typedef pair<int,int>  ii;
@@ -39,10 +38,51 @@ void print_container(const TCOMP& c){
   cout << "\n";
 }
 
+constexpr int INF = numeric_limits<int>::max() / 2;
+int n, m;
+
+struct Edge{
+  int u, v, w;
+};
+
+bool neg_cycle(const vector<Edge>& g){
+  vi d(n, 0);
+  vi p(n, -1);
+  int x = -1;
+
+  forn(i, n){
+    x = -1;
+
+    forall(e, g){
+      if(d[e.u] + e.w < d[e.v]){
+        d[e.v] = max(-INF, d[e.u] + e.w);
+        p[e.v] = e.u;
+        x = e.v;
+      }
+    }
+  }
+
+  return x != -1;
+}
+
 int main() {
   ios::sync_with_stdio(false); cin.tie(0);
 
-  
+  int tt; cin >> tt;
+  forn(i, tt){
+    cin >> n >> m;
+    vector<Edge> wh;
+
+    forn(j, m){
+      Edge e;
+      cin >> e.u >> e.v >> e.w;
+      wh.pb(e);
+    }
+
+    bool negative_cycle = neg_cycle(wh);
+
+    cout << (negative_cycle ? "possible" : "not possible") << "\n";
+  }
 
   return 0;
 }

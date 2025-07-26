@@ -1,5 +1,5 @@
 // UVA 12524 - Arranging Heaps
-// TO-DO
+// TO-DO: Da TLE! 
 #include <iostream>   // cout, cin
 #include <algorithm>  // sort, binary_search, lower_bound, upper_bound
 #include <cmath>      // sqrt, pow, abs, ceil, floor

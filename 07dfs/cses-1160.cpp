@@ -118,7 +118,7 @@ int main() {
       // se encontro un ciclo
       cont_cycle_id++;
 
-      int inicio_ciclo = temp_idx[act]; // indice en camino actual donde empieza el ciclo
+      int inicio_ciclo = temp_idx[act];
       int ciclo_size = idx - inicio_ciclo;
       int rep = camino_actual[inicio_ciclo];
 
